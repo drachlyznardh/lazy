@@ -1,0 +1,13 @@
+#!/bin/bash
+
+alias gs='git status'
+alias gd='git diff'
+alias gw='git show'
+alias gb='git branch'
+alias gc='git commit'
+alias gs='git status'
+
+function fgh { PYTHONPATH=~/devel/githistorian/src/ python -m githistorian $@ | less -RFX; }
+alias  gh='clear && fgh -n30'
+alias gha='fgh -a'
+
